@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Digital Products</h2>
+  <ul>
+    {% for product in products %}
+      <li><a href="{% url 'product_detail' product.pk %}">{{ product.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
