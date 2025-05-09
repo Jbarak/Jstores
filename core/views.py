@@ -1,5 +1,6 @@
+# views.py
+
 from django.shortcuts import render
 
 def homepage(request):
-    return render(request, 'core/home.html')
-
+    return render(request, 'base.html')  # or 'yourtemplate.html'
