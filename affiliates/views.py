@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from .models import Affiliate
+from .models import AffiliateLink
 
 def affiliate_list(request):
-    affiliates = Affiliate.objects.all()
+    affiliates = AffiliateLink.objects.all()
     return render(request, 'affiliates/affiliate_list.html', {'affiliates': affiliates})
+ 
